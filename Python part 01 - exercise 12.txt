@@ -1,0 +1,4 @@
+name = 'Uros'
+age = 26
+hello = f'Hi, my name is {name} and i am {age} years old'
+print(hello)

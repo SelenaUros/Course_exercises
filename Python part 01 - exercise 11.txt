@@ -1,0 +1,12 @@
+a = 'hello'
+b = 'tom'
+c = 'LAURA'
+question = 'How are you'
+age_question = 'How old are you?'
+a = a.capitalize()
+b = b.upper()
+c = c.lower()
+question = question.replace('o', 'e')
+age_question = age_question.rsplit(' ')
+# this way last word has question mark next to it. It can be done like this to remove question mark: age_question = age_question.replace('?', '').split(' ')
+print(a, b, c, question, age_question)

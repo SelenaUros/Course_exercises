@@ -1,0 +1,2 @@
+single = 'My name is Uros'
+double = "My name is Uros"

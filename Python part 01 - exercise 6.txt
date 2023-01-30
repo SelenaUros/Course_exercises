@@ -1,0 +1,2 @@
+# I dont know what they meant by this question, but variable name wont work if it starts with number and if it has '-' character in its name, so I just removed those two.
+my_first2_Name = 'Mario'
