@@ -1,0 +1,7 @@
+# as I mentioned in a discord group I am not sure if this was asked of us to do for this exercise
+i = 1 
+while i < 6:
+    print("*"*i)
+    i = i + 1
+    if i == 3:
+        break

@@ -1,0 +1,46 @@
+list1 = ["lion", "monkey", "dog","fish"]
+tuple1 = ("lion", "monkey", "dog","fish")
+set1 = {"lion", "monkey", "dog","fish"}
+dict1 = {"lion":4, "monkey":2, "dog":4,"fish":2}
+# solution:
+# 1.
+a1 = len(list1)
+b1 = len(tuple1)
+c1 = len(set1)
+d1 = len(dict1)
+
+print(f"""list1 length is {a1}
+tuple1 length is {b1}
+set1 length is {c1}
+dict1 length is {d1}
+""")
+
+# 2.
+a2 = list1[0]
+b2 = tuple1[0]
+if a2 == b2:
+    print(f'first element of both list1 and tuple1 is "{a2}"')
+else:
+    print(f'first element of list1 is "{a2}" and first element of tuple1 is "{b2}"')
+
+# 3.
+print(dict1['lion'])
+
+# 4.
+list1[1] = 'rabbit'
+
+# 5.
+# tuple1[1] = 'rabbit'  terminal returned error: 'tuple' object does not support item assignment
+# this happened because tuples are immutable meaning that ones tuple is created they cannot be changed
+
+# 6.
+list1.append('monkey')
+
+# 7.
+list1.remove('rabbit')
+
+# 8.
+dict1["fish"] = 0
+
+
+
