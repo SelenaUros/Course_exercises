@@ -1,0 +1,10 @@
+import random as r
+def random_list_summer():
+    random_list = r.sample(range(-100,100),15)
+    print(random_list)
+    sum = 0
+    for i in random_list:
+        sum += i
+    print(sum)
+
+random_list_summer()

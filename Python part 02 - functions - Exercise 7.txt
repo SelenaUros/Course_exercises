@@ -1,0 +1,6 @@
+my_list= [*range(5)]
+
+x = lambda a : a ** 2
+for i in my_list:
+    if i % 2 == 0:
+        print(x(i))

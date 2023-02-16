@@ -1,0 +1,20 @@
+# this works assuming 'John' is a surname because thats how I understood reading the question. If "Doe" is surname process is the same just different value in certain places.
+list_of_people = ['Tristan Mcbride', 'Baldwin Preston', 'Wally Collins', 'Doe John','Mom John', 'Brother John']
+def greet(name = 'Doe', surname = 'John'):
+    print(f'Hello {name} {surname}!')
+
+new_list = []
+if len(list_of_people) > 0:
+    for i in range(0, len(list_of_people)):
+        if 'John'.lower() in list_of_people[i].lower():
+            new_list.append(list_of_people[i])
+else:
+    greet()
+
+list_without_John = list(set(list_of_people).difference(set(new_list)))
+new_list_of_people = new_list + list_without_John
+
+for i in range(0, len(new_list_of_people)):
+    name = new_list_of_people[i].partition(' ')[0]
+    surname = new_list_of_people[i].partition(' ')[2]
+    greet(name, surname)

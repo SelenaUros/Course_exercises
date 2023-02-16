@@ -1,0 +1,13 @@
+def fib_seq(n, memo = {}):
+    if n == 0:
+        return 1
+    elif n == 1:
+        return 1
+    elif n in memo:
+        return memo[n]
+        
+    else:
+        memo[n] = n * fib_seq(n-1)
+        return memo[n]
+
+print(fib_seq(5))
